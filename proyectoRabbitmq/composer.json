@@ -1,0 +1,13 @@
+{
+    "name": "dani/proyecto-rabbitmq",
+    "description": "rabbitmq con php",
+    "authors": [
+        {
+            "name": "dani",
+            "email": "dani.dass.do@gmail.com"
+        }
+    ],
+    "require": {
+        "php-amqplib/php-amqplib": ">=2.9.0"
+    }
+}
