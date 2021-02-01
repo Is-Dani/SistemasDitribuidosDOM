@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://operaciones/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="Operaciones" targetNamespace="http://operaciones/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/OperacionWS/Operaciones?xsd=1" namespace="http://operaciones/" />
+    </xsd:schema>
+  </types>
+  <message name="hello">
+    <part name="parameters" element="tns:hello" />
+  </message>
+  <message name="helloResponse">
+    <part name="parameters" element="tns:helloResponse" />
+  </message>
+  <message name="suma">
+    <part name="parameters" element="tns:suma" />
+  </message>
+  <message name="sumaResponse">
+    <part name="parameters" element="tns:sumaResponse" />
+  </message>
+  <message name="restar">
+    <part name="parameters" element="tns:restar" />
+  </message>
+  <message name="restarResponse">
+    <part name="parameters" element="tns:restarResponse" />
+  </message>
+  <message name="multiplicacion">
+    <part name="parameters" element="tns:multiplicacion" />
+  </message>
+  <message name="multiplicacionResponse">
+    <part name="parameters" element="tns:multiplicacionResponse" />
+  </message>
+  <message name="division">
+    <part name="parameters" element="tns:division" />
+  </message>
+  <message name="divisionResponse">
+    <part name="parameters" element="tns:divisionResponse" />
+  </message>
+  <portType name="Operaciones">
+    <operation name="hello">
+      <input wsam:Action="http://operaciones/Operaciones/helloRequest" message="tns:hello" />
+      <output wsam:Action="http://operaciones/Operaciones/helloResponse" message="tns:helloResponse" />
+    </operation>
+    <operation name="suma">
+      <input wsam:Action="http://operaciones/Operaciones/sumaRequest" message="tns:suma" />
+      <output wsam:Action="http://operaciones/Operaciones/sumaResponse" message="tns:sumaResponse" />
+    </operation>
+    <operation name="restar">
+      <input wsam:Action="http://operaciones/Operaciones/restarRequest" message="tns:restar" />
+      <output wsam:Action="http://operaciones/Operaciones/restarResponse" message="tns:restarResponse" />
+    </operation>
+    <operation name="multiplicacion">
+      <input wsam:Action="http://operaciones/Operaciones/multiplicacionRequest" message="tns:multiplicacion" />
+      <output wsam:Action="http://operaciones/Operaciones/multiplicacionResponse" message="tns:multiplicacionResponse" />
+    </operation>
+    <operation name="division">
+      <input wsam:Action="http://operaciones/Operaciones/divisionRequest" message="tns:division" />
+      <output wsam:Action="http://operaciones/Operaciones/divisionResponse" message="tns:divisionResponse" />
+    </operation>
+  </portType>
+  <binding name="OperacionesPortBinding" type="tns:Operaciones">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="hello">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="suma">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="restar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="multiplicacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="division">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Operaciones">
+    <port name="OperacionesPort" binding="tns:OperacionesPortBinding">
+      <soap:address location="http://localhost:8080/OperacionWS/Operaciones" />
+    </port>
+  </service>
+</definitions>

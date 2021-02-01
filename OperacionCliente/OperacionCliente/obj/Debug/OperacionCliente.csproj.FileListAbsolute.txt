@@ -1,0 +1,10 @@
+D:\dani\2-2020\sis258\SistemasDitribuidosDOM\OperacionCliente\OperacionCliente\bin\Debug\OperacionCliente.exe.config
+D:\dani\2-2020\sis258\SistemasDitribuidosDOM\OperacionCliente\OperacionCliente\bin\Debug\OperacionCliente.exe
+D:\dani\2-2020\sis258\SistemasDitribuidosDOM\OperacionCliente\OperacionCliente\bin\Debug\OperacionCliente.pdb
+D:\dani\2-2020\sis258\SistemasDitribuidosDOM\OperacionCliente\OperacionCliente\obj\Debug\OperacionCliente.csprojAssemblyReference.cache
+D:\dani\2-2020\sis258\SistemasDitribuidosDOM\OperacionCliente\OperacionCliente\obj\Debug\OperacionCliente.Form1.resources
+D:\dani\2-2020\sis258\SistemasDitribuidosDOM\OperacionCliente\OperacionCliente\obj\Debug\OperacionCliente.Properties.Resources.resources
+D:\dani\2-2020\sis258\SistemasDitribuidosDOM\OperacionCliente\OperacionCliente\obj\Debug\OperacionCliente.csproj.GenerateResource.cache
+D:\dani\2-2020\sis258\SistemasDitribuidosDOM\OperacionCliente\OperacionCliente\obj\Debug\OperacionCliente.csproj.CoreCompileInputs.cache
+D:\dani\2-2020\sis258\SistemasDitribuidosDOM\OperacionCliente\OperacionCliente\obj\Debug\OperacionCliente.exe
+D:\dani\2-2020\sis258\SistemasDitribuidosDOM\OperacionCliente\OperacionCliente\obj\Debug\OperacionCliente.pdb

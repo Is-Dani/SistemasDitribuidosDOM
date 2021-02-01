@@ -12,7 +12,6 @@ import java.net.InetAddress;
 import java.net.SocketException;
 
 /**
- *
  * @author Dani
  */
 public class ClientePrimoUdp {
@@ -21,7 +20,7 @@ public class ClientePrimoUdp {
         int puerto = 6789;
 
         try {
-            int dato = 4;
+            int dato = 25;
             String ip = "localhost";
             DatagramSocket socketUDP = new DatagramSocket();
 
@@ -35,8 +34,7 @@ public class ClientePrimoUdp {
 
             // Construimos un datagrama para enviar el mensaje al servidor
             DatagramPacket peticion
-                    = new DatagramPacket(mensaje, mensaje.length, hostServidor,
-                            puerto);
+                    = new DatagramPacket(mensaje, mensaje.length, hostServidor, puerto);
 
             // Enviamos el datagrama
             socketUDP.send(peticion);
@@ -56,7 +54,7 @@ public class ClientePrimoUdp {
                 r = "es primo";
             }
             System.out.println("Respuesta: " + r);
-
+            
             // Cerramos el socket
             socketUDP.close();
 

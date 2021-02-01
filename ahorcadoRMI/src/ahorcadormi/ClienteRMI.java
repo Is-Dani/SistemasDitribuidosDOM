@@ -28,7 +28,7 @@ public class ClienteRMI {
         String resultado = "Ganaste";
         Scanner sc = new Scanner(System.in);
         char letra;
-        while (resultado == "Ganaste") {
+        while (resultado.equals("Seguir")) {
             System.out.println("introduzca una letra");
             letra = sc.next().charAt(0);
 

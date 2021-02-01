@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://operaciones/" targetNamespace="http://operaciones/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="division" type="tns:division" />
+  <xs:element name="divisionResponse" type="tns:divisionResponse" />
+  <xs:element name="hello" type="tns:hello" />
+  <xs:element name="helloResponse" type="tns:helloResponse" />
+  <xs:element name="multiplicacion" type="tns:multiplicacion" />
+  <xs:element name="multiplicacionResponse" type="tns:multiplicacionResponse" />
+  <xs:element name="restar" type="tns:restar" />
+  <xs:element name="restarResponse" type="tns:restarResponse" />
+  <xs:element name="suma" type="tns:suma" />
+  <xs:element name="sumaResponse" type="tns:sumaResponse" />
+  <xs:complexType name="hello">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="helloResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="restar">
+    <xs:sequence>
+      <xs:element name="num1" type="xs:int" />
+      <xs:element name="num2" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="restarResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="suma">
+    <xs:sequence>
+      <xs:element name="num1" type="xs:int" />
+      <xs:element name="num2" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sumaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="division">
+    <xs:sequence>
+      <xs:element name="num1" type="xs:int" />
+      <xs:element name="num2" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="divisionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="multiplicacion">
+    <xs:sequence>
+      <xs:element name="num1" type="xs:int" />
+      <xs:element name="num2" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="multiplicacionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

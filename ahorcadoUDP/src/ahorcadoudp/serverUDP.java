@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package primerexamenparcial;
+package ahorcadoudp;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -11,11 +11,13 @@ import java.net.DatagramSocket;
 import java.net.SocketException;
 
 /**
+ *
  * @author Dani
  */
-public class ServidorPrimoUdp {
+public class serverUDP {
 
     public static void main(String args[]) {
+        JuegoAhorcado JA = new JuegoAhorcado();
         int port = 6789;
 
         try {
@@ -36,13 +38,16 @@ public class ServidorPrimoUdp {
                 System.out.println(" desde el puerto remoto: "
                         + peticion.getPort());
 
-                //recibimos 
-                byte datos = peticion.getData()[0];
-                int resp = primo(datos);
-                byte a = (byte) primo(peticion.getData()[0]);
+                //byte
+                byte letra = peticion.getData()[0];
+                char letra2 = (char)letra;
+                String resp = JA.Jugar(letra2);
+                byte[] mensaje =  resp.getBytes();
+                System.out.println(resp+letra2);
+                // byte a = (byte) JA.Jugar(peticion.getData());
                 // declaramos un array de bytes  con los bit necesarios "a"
-                byte[] mensaje = new byte[a];
-                mensaje[0] = a;
+                //String mensaje = new String [resp];
+                // mensaje[0] = a;
 
                 // Construimos el DatagramPacket para enviar la respuesta
                 DatagramPacket respuesta = new DatagramPacket(mensaje, 1,
@@ -59,17 +64,4 @@ public class ServidorPrimoUdp {
         }
     }
 
-    public static int primo(int n) {
-        int contador = 0;
-        for (int i = 1; i <= n; i++) {
-            if ((n % i) == 0) {
-                contador++;
-            }
-        }
-        if (contador <= 2) {
-            return 1;
-        } else {
-            return 2;
-        }
-    }
 }
