@@ -1,0 +1,10 @@
+D:\dani\2-2020\sis258\tareas\Servicios Web practica\ClienteTemperatura\ClienteTemperatura\bin\Debug\ClienteTemperatura.exe.config
+D:\dani\2-2020\sis258\tareas\Servicios Web practica\ClienteTemperatura\ClienteTemperatura\bin\Debug\ClienteTemperatura.exe
+D:\dani\2-2020\sis258\tareas\Servicios Web practica\ClienteTemperatura\ClienteTemperatura\bin\Debug\ClienteTemperatura.pdb
+D:\dani\2-2020\sis258\tareas\Servicios Web practica\ClienteTemperatura\ClienteTemperatura\obj\Debug\ClienteTemperatura.csprojAssemblyReference.cache
+D:\dani\2-2020\sis258\tareas\Servicios Web practica\ClienteTemperatura\ClienteTemperatura\obj\Debug\ClienteTemperatura.formClima.resources
+D:\dani\2-2020\sis258\tareas\Servicios Web practica\ClienteTemperatura\ClienteTemperatura\obj\Debug\ClienteTemperatura.Properties.Resources.resources
+D:\dani\2-2020\sis258\tareas\Servicios Web practica\ClienteTemperatura\ClienteTemperatura\obj\Debug\ClienteTemperatura.csproj.GenerateResource.cache
+D:\dani\2-2020\sis258\tareas\Servicios Web practica\ClienteTemperatura\ClienteTemperatura\obj\Debug\ClienteTemperatura.csproj.CoreCompileInputs.cache
+D:\dani\2-2020\sis258\tareas\Servicios Web practica\ClienteTemperatura\ClienteTemperatura\obj\Debug\ClienteTemperatura.exe
+D:\dani\2-2020\sis258\tareas\Servicios Web practica\ClienteTemperatura\ClienteTemperatura\obj\Debug\ClienteTemperatura.pdb

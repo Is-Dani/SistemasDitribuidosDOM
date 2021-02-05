@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://Clima/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WsClima" targetNamespace="http://Clima/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/ClimaWebService/WsClima?xsd=1" namespace="http://Clima/" />
+    </xsd:schema>
+  </types>
+  <message name="getClimaPorcentaje">
+    <part name="parameters" element="tns:getClimaPorcentaje" />
+  </message>
+  <message name="getClimaPorcentajeResponse">
+    <part name="parameters" element="tns:getClimaPorcentajeResponse" />
+  </message>
+  <message name="getClimaTemperatura">
+    <part name="parameters" element="tns:getClimaTemperatura" />
+  </message>
+  <message name="getClimaTemperaturaResponse">
+    <part name="parameters" element="tns:getClimaTemperaturaResponse" />
+  </message>
+  <portType name="WsClima">
+    <operation name="getClimaPorcentaje">
+      <input wsam:Action="http://Clima/WsClima/getClimaPorcentajeRequest" message="tns:getClimaPorcentaje" />
+      <output wsam:Action="http://Clima/WsClima/getClimaPorcentajeResponse" message="tns:getClimaPorcentajeResponse" />
+    </operation>
+    <operation name="getClimaTemperatura">
+      <input wsam:Action="http://Clima/WsClima/getClimaTemperaturaRequest" message="tns:getClimaTemperatura" />
+      <output wsam:Action="http://Clima/WsClima/getClimaTemperaturaResponse" message="tns:getClimaTemperaturaResponse" />
+    </operation>
+  </portType>
+  <binding name="WsClimaPortBinding" type="tns:WsClima">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getClimaPorcentaje">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getClimaTemperatura">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WsClima">
+    <port name="WsClimaPort" binding="tns:WsClimaPortBinding">
+      <soap:address location="http://localhost:8080/ClimaWebService/WsClima" />
+    </port>
+  </service>
+</definitions>

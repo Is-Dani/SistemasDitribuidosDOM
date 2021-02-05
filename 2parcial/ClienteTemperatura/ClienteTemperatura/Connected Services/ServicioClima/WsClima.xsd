@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Clima/" targetNamespace="http://Clima/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="getClimaPorcentaje" type="tns:getClimaPorcentaje" />
+  <xs:element name="getClimaPorcentajeResponse" type="tns:getClimaPorcentajeResponse" />
+  <xs:element name="getClimaTemperatura" type="tns:getClimaTemperatura" />
+  <xs:element name="getClimaTemperaturaResponse" type="tns:getClimaTemperaturaResponse" />
+  <xs:complexType name="getClimaPorcentaje">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fecha" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getClimaPorcentajeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getClimaTemperatura">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fecha" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getClimaTemperaturaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
